@@ -1,6 +1,6 @@
 {
   "name": "@padmaj/envguard",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Validate required environment variables at startup and throw a clear error listing what's missing.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
