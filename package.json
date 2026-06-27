@@ -1,0 +1,40 @@
+{
+  "name": "@padmaj/envguard",
+  "version": "1.0.0",
+  "description": "Validate required environment variables at startup and throw a clear error listing what's missing.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "env",
+    "environment",
+    "validation",
+    "startup",
+    "dotenv",
+    "config"
+  ],
+  "author": "Padmaj P Kumar",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.0.1",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.9"
+  }
+}
